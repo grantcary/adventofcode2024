@@ -1,8 +1,7 @@
 data = open('day11.txt', 'r').read().split(' ')
 
-blinks = 25
+blinks = 1
 for b in range(blinks):
-    print(b, len(data))
     e = 0
     while e < len(data):
         stone = data[e]
@@ -16,4 +15,4 @@ for b in range(blinks):
         e += 1
 
 ans = len(data)
-print(ans)
+print(ans) # 217443
