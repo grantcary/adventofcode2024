@@ -24,8 +24,5 @@ for b in range(blinks):
             entry(str(int(stone) * 2024), count, stones)
             stones[stone] -= count
 
-ans = 0
-for count in stones.values():
-    ans += count
-
+ans = sum(stones.values())
 print(ans) # 257246536026785
